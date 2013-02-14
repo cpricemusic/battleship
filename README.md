@@ -3,13 +3,17 @@ battleship
 
 battleship coding project for voodoo lunchbox
 
-executable JAR file can be found in the bin/ directory.
+- prebuilt executable JAR file can be found in the bin/ directory.
 
-it can be executed like this:
-java -jar BattleshipMatch.jar [-e] 
+- program can be run like this:
 
-this client assumes there is a rails server running locally (http://localhost:3000/) with the battleship-master ruby application up and running.
+> java -jar BattleshipMatch.jar [-e] 
 
-the "-e" switch is optional.  if passed, it will turn player 1 to "expert" mode, which *should* result in a pretty consistent winning record.  "expert" mode implements some additional logic and strategy that makes the Player with that mode enabled a much stronger opponent.
+- this client assumes a rails server is up locally (http://localhost:3000/) with the battleship-master ruby application loaded and running.
 
-without the "-e" switch, both player 1 and player 2 will compete in "non-expert" mode.
+- the "-e" command-line switch is optional.  
+
+- without the "-e" switch, both player 1 and player 2 will compete in "non-expert" mode.
+
+- if passed, it will initialize player 1 with "expert" mode, which *should* result in a pretty consistent winning record.  "expert" mode implements some additional logic and strategy that makes the Player with that mode enabled a much stronger opponent.
+
